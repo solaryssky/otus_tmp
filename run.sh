@@ -15,7 +15,7 @@ echo GROUP:$GROUP
 
 if [ "$BRANCH" == "" ]; then
 	echo "We don't have tests for master branch"
-	exit 0
+	exit 1
 fi
 
 echo HOMEWORK:$BRANCH
