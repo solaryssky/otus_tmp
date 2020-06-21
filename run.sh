@@ -1,4 +1,8 @@
 #!/bin/bash
+
+set -v
+set -x
+
 GROUP=2020-05
 BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
 echo 'val branch is' $BRANCH
@@ -35,3 +39,6 @@ else
 	echo "We don't have tests for this homework"
 	exit 0
 fi
+
+set +v
+set +x
